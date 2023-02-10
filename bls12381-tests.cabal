@@ -1,0 +1,16 @@
+cabal-version:      2.4
+name:               bls12381-tests
+version:            0.1.0.0
+author:             perturbing
+maintainer:         thomas.vellekoop@iohk.io
+
+extra-source-files: CHANGELOG.md
+
+executable bls12381-tests
+    main-is:          Main.hs
+    build-depends:    base ^>=4.14.3.0
+                    , cardano-crypto-class
+                    , heapwords
+                    , bytestring
+    hs-source-dirs:   app
+    default-language: Haskell2010
